@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Acessos | Amêndola</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" id="logo">
+            <div id = 'cx-pesquisa'>
+                <button type="submit" id="btn-pesquisa">
+                    <iconify-icon icon="ic:baseline-search" style="color: #f79633;"></iconify-icon>
+                </button>
+                <input type="text" name="search" placeholder="Pesquisar..." id="area-pesquisa">
+            </div>
+        </div>
+    </header>
+    <div class="cards">
+        <div class="card" id="card-sales" name="sales">
+            <h3>Sales</h3>
+        </div>
+        <div class="card" id="card-serra" name="serra negra">
+            <h3>Serra Negra</h3>
+        </div>
+    </div>
+    <div class="popup" id='popup'>
+        <div class="info">
+        <!-- Acessos aki -->
+        <textarea name="acesso" id="acesso" cols="30" rows="10"></textarea>
+        <button id="close-modal">X</button>
+        <button id="close-modal">Salvar</button>
+        </div>
+    </div>
+</body>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="../static/script.js"></script>
+</html>

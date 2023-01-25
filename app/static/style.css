@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #B9B4B4;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
+  border: 3px hidden #B9B4B4;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600&display=swap');
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 98px;
+  background-color: white;
+  border-bottom: 5px solid orange;
+}
+
+.cabecalho {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+  
+#logo {
+    margin-right: auto;
+  }
+  
+#area-pesquisa, #btn-pesquisa {
+    margin-left: 10px;
+  }
+
+#cx-pesquisa {
+    width: 320px;
+    height: 34px;
+    background: #B9B4B4;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#btn-pesquisa {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-pesquisa i {
+    font-size: 20vw;
+    background-color: #000;
+    padding: 10vw;
+    border-radius: 50%;
+}
+
+#cx-pesquisa p {
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 2px;
+    margin-left: -7vh;
+    margin-right: 0vh;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+}
+
+#area-pesquisa {
+    float: right;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border-left: 2px solid white;
+    height: 100%;
+}
+
+.cards {
+  display: grid;
+  padding-top: 15vh;
+  padding-left: 3vh;
+  
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows:  repeat(4, 200px);
+  grid-gap: 10px;
+}
+
+.card {
+  display: flex;
+  grid-column: span 1;
+  grid-row: span 1;
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  align-items: inherit;
+  background-size: cover;
+
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: inset 0px -30px 70px rgba(0, 0, 0, 0.377);
+  transition: 0.5s ease-in-out;
+}
+
+.card h3 {
+  position: relative;
+  padding-left: 3vh;
+  padding-top: 18vh;
+  vertical-align: baseline;
+
+  color: #ffffff00;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  transition:  0.3s ease-in;
+  vertical-align: bottom;
+}
+
+.card:hover h3 {
+  color: #ffffff;
+}
+
+#popup {
+  position: fixed;
+  display: none;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.438);
+  box-shadow: inset 0px -50px 70px rgba(0, 0, 0, 0.801);;
+  z-index: 10;
+}
+
+.info {
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  color: white;
+  margin: auto;
+  width: 25%; height: 45%;
+  background: #ffffff;
+  margin-top: 5%;
+  border-radius: 3%;
+}
+
+#acesso {
+  width: 100%;
+  height: 100%;
+  background-color: #B9B4B4;
+  color: white;
+}
+
+#card-sales {
+  background-image: url(https://www.sales.sp.gov.br/Content/images/vista-aerea/s_011.jpg);
+}
+
+#card-serra {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Serra_Negra_176.jpg/640px-Serra_Negra_176.jpg);
+}
