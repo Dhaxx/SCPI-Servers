@@ -84,7 +84,7 @@ header {
     float: right;
     background-color: transparent;
     padding-left: 5px;
-    font-size: 20px;
+    font-size: 10px; font-family: 'Inter', sans-serif;
     border-left: 2px solid white;
     height: 100%;
 }
@@ -137,34 +137,69 @@ header {
   color: #ffffff;
 }
 
-#popup {
+.popup {
   position: fixed;
   display: none;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  margin: auto;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.438);
-  box-shadow: inset 0px -50px 70px rgba(0, 0, 0, 0.801);;
+  box-shadow: inset 0px -50px 70px rgba(0, 0, 0, 0.801);
+  flex-direction: column;
   z-index: 10;
 }
 
 .info {
+  display: block;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  color: white;
-  margin: auto;
+  font-family: 'Inter', sans-serif;
+  margin: auto; margin-bottom: 5px;
   width: 25%; height: 45%;
-  background: #ffffff;
-  margin-top: 5%;
-  border-radius: 3%;
+  background-color: #B9B4B4;
+  color: rgb(0, 0, 0); font-size: small;
 }
 
-#acesso {
+.buttons {
+  display: flex;
+  margin-bottom: auto;
+  justify-content: center;
   width: 100%;
-  height: 100%;
+}
+
+.buttons button {
+  cursor: pointer;
   background-color: #B9B4B4;
+  color: #000000;
+  border-radius: 15px;
+  padding: 1vh;
+  font-size: 2vh;
+  margin-right: 5px;
+  font-family: 'Inter', sans-serif;
+  transition:  0.2s ease-in;
+}
+
+.buttons button:hover {
+  background-color: #ffa600;
   color: white;
+}
+
+.add-card-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center; align-items: center;
+  bottom: 20px; right: 20px;
+  width: 5vh; height: 5vh;
+  border-radius: 90px;
+  z-index: 5;
+  cursor: pointer;
+  background-color: #8F8F8F;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.add-card-btn:hover {
+  background-color: #ffa600;
 }
 
 #card-sales {
